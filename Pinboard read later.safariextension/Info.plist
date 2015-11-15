@@ -78,5 +78,7 @@
 			<string>All</string>
 		</dict>
 	</dict>
+	<key>Website</key>
+	<string>https://github.com/adamse/read-later-safari</string>
 </dict>
 </plist>
