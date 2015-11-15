@@ -27,10 +27,6 @@ function changeIcon(button, icon) {
 }
 
 function handleReadLater(event) {
-  if (event.command !== "PinboardReadLater") {
-    return;
-  }
-
   console.log("handling Read Later");
 
   var button = event.target;
@@ -72,9 +68,22 @@ function handleReadLater(event) {
 
 }
 
+function handleViewBookmarks(event) {
+  var newTab = safari.application.activeBrowserWindow.openTab();
+  newTab.url = "https://pinboard.in/";
+}
+
+function handleCommand(event) {
+  if (event.command === "PinboardReadLater") {
+    handleReadLater(event);
+  } else if (event.command === "PinboardViewBookmarks") {
+    handleViewBookmarks(event);
+  }
+}
+
 function setup() {
   console.log("setting up");
-  safari.application.addEventListener("command", handleReadLater);
+  safari.application.addEventListener("command", handleCommand);
 }
 
 setup();

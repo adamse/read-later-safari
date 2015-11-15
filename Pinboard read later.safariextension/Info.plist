@@ -20,6 +20,28 @@
 	<dict>
 		<key>Global Page</key>
 		<string>global.html</string>
+		<key>Menus</key>
+		<array>
+			<dict>
+				<key>Identifier</key>
+				<string>PinboardMenu</string>
+				<key>Menu Items</key>
+				<array>
+					<dict>
+						<key>Command</key>
+						<string>PinboardViewBookmarks</string>
+						<key>Disabled</key>
+						<false/>
+						<key>Identifier</key>
+						<string>PinboarViewBookmarks</string>
+						<key>Submenu</key>
+						<string>PinboardMenu</string>
+						<key>Title</key>
+						<string>View bookmarks</string>
+					</dict>
+				</array>
+			</dict>
+		</array>
 		<key>Toolbar Items</key>
 		<array>
 			<dict>
@@ -33,6 +55,8 @@
 				<true/>
 				<key>Label</key>
 				<string>Read later</string>
+				<key>Menu</key>
+				<string>PinboardMenu</string>
 				<key>Palette Label</key>
 				<string>Pinboard read later</string>
 			</dict>
