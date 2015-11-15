@@ -1,6 +1,7 @@
 Safari toolbar button for saving active tab for later reading at
 Pinboard.
 
+![extension in action](in-action.gif)
 
 # Credits
 
